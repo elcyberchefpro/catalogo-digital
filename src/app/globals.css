@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #111827;
+  --accent: #10b981;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.card-hover {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.badge-new { background: #10b981; color: white; }
+.badge-soldout { background: #6b7280; color: white; }
+.badge-available { background: #111827; color: white; }
+
+.dropzone {
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #f9fafb;
+}
+.dropzone:hover, .dropzone.dragging {
+  border-color: #10b981;
+  background: #ecfdf5;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.whatsapp-btn:hover { background: #128c7e; }
